@@ -1,10 +1,10 @@
 
 input[type=text], input[type=email], select, textarea {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #c3d600;
     background-color: #f2f2f2;
-    border-radius: 2px; 
+    border-radius: 4px; 
     resize: vertical;
 }
   
@@ -13,20 +13,31 @@ label {
     display: inline-block;
 }
 
+h1 {    
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-family: montsbold;
+    text-align: center;
+    font-size: 40px;
+    color: #c3d600;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678);
+    margin-top: 100%;
+}
+
 .form-background{
     background-image: url(../imgs/cherrybloom.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 15px 10px 30px 10px;
-
+    padding: 15px 25px 30px 25px;
 }
+
 
 .btn-light{
     background-color: #f28500;
     border-radius: 12px;
     outline:none;
-    width: 210px;
+    width: 220px;
     padding: 5px 20px;
     margin-top: 10px;
     color: white;
@@ -34,48 +45,54 @@ label {
     font-family: montsbold;
     font-size: x-large;
     float: right;
-
 }
-
 
 .btn-light:hover {
     background-color: #c3d600;
     color: white;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 
 .btn-secondary {
-    background-color: #A6A6A6;
-    border-radius: 12px;
-    margin-left: 25px;
-    margin-bottom: 12px;
-    width: 255px; 
-    padding: 5px 20px;
     src: url('../fonts/Montserrat-Bold.ttf');
     font-family: montsbold;
+    background-color: #A6A6A6;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 255px; 
+    padding: 5px 20px;
     font-size: x-large;
     font-weight: bold;
     outline:none;
-
 }
 
-.current{
+
+.current, .btn-secondary:hover {
     background-color: #001f3d;
+
 }
-  
-.formbox {
-    max-width: 900px;
-    border-radius: 10px;
-    background-color: white;
-    border: 2px solid #c3d600;
-    padding: 40px 70px 40px 70px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+
+#contactbox, #formbox{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+#contactbox{
+    background-image: url(../imgs/blurred-bg.png);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: auto !important;
+}
+
+#formbox {
+    max-width: 900px;
+    background-color: white;
+    padding: 50px 60px 40px 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: auto;
 }
   
 .col-25 {
@@ -84,8 +101,7 @@ label {
     font-weight:bolder;
     src: url('../fonts/Poppins-SemiBold.ttf');
     font-family: poppins;
-    font-size: 20px;
-
+    font-size: large;
 }
   
 .col-75 {
@@ -95,88 +111,113 @@ label {
 
 }
 
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-     
-  
-.contactus, h1 {
-    src: url('../fonts/Montserrat-Bold.ttf');
-    font-family: montsbold;
-    font-size: 50px;
-    color: white;
-    padding: 7px 0px 5px 0px;
-    text-align: center;
-    text-shadow: 1px 1px 3px black;
-}
 
 /* RESPONSIVE LAYOUT */
 
-
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px) and (min-width: 1001px){
     .btn-secondary{
-        width: 240px;
-        font-size: x-large;
-    }
-}
-
-@media screen and (max-width: 899px) and (min-width: 820px) {
-    .btn-secondary{
-        width: 235px;
+        width: 225px;
         font-size: x-large;
         margin-left: 10px;
     }
 }
 
-@media screen and (max-width: 819px) and (min-width: 775px){
-    .btn-secondary{
-        width: 225px;
-        font-size: x-large;
-        margin-left: 5px;
-    }
-}
 
-@media screen and (max-width: 774px) and (min-width:715px){
-    .btn-secondary{
-        width: 204px;
-        font-size: x-large;
-        margin-left: 5px;
-    }
-}
-
-@media screen and (max-width: 714px) and (min-width:680px){
-    .btn-secondary{
-        width: 190px;
-        font-size: x-large;
-        margin-left: 5px;
-    }
-}
-
-@media screen and (max-width: 679px) and (min-width: 581px) {
-    .btn-secondary{
-        width: 180px;
-        font-size: x-large;
-        margin-left: 5px;
-    }
-}
-
-@media screen and (max-width: 580px){
+@media screen and (max-width: 1000px) and (min-width: 880px){
     .col-25, .col-75, input[type=submit]{
         width: 100%;
         margin-top: 0;
     }
     .btn-secondary{
-        width: 160px;
-        font-size: large;
+        width: 190px;
+        font-size: x-large;
         margin-left: 10px;
     }
 
-    #message {
-        margin-bottom: 20px
+    #contactbox{
+        margin-top: 30px;
+    }
+    #formbox{
+        margin-top: 30px !important;
+    }
+
+    h1{
+        margin-top: 200px;
+    }
+
+}
+
+@media screen and (max-width: 879px) and (min-width: 825px){
+    .btn-secondary{
+        width: 170px;
+        font-size: larger;
+        margin-left: 10px;
+    }
+
+    #contactbox{
+        margin-top: 30px;
+    }
+    #formbox{
+        margin-top: 30px !important;
+    }
+
+    h1{
+        font-size: 35px;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 824px) and (min-width: 768px) {
+    .btn-secondary{
+        width: 160px;
+        font-size: large;
+        margin-left: 5px;
+    }
+
+    #contactbox{
+        margin-top: 30px;
+    }
+    #formbox{
+        margin-top: 30px !important;
+    }
+
+    h1{
+        margin-top: 200px;
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .col-25, .col-75, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+    .btn-secondary{
+        width: 170px;
+        font-size: larger;
+        margin-left: 10px;
+    }
+    #message{
+        margin-bottom: 15px;
+    }
+
+    #contactbox{
+        margin-top: 30px;
+        margin-bottom: 0px !important;
+    }
+    #formbox{
+        margin-top: 0px !important;
+    }
+
+    h1{
+        margin-top: 35px;
     }
 }
 
