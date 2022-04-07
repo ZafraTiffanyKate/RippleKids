@@ -70,17 +70,16 @@ body{
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 675px) {
   .hero_detail-box{
   padding: 30px 0;
-  text-align: left;
+  text-align: center;
   position: block;
   }
-
   .hero_detail-box h1{
-    line-height: 45px;
+    line-height: 35px;
     font-family: montsbold;
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: 1px 1px 1px #673c1b;
   }
 }
@@ -105,7 +104,6 @@ body{
   text-decoration-thickness: auto;
   width: 100%;
   max-width: 380px;
-  position: relative;
   cursor: pointer;
   transform: rotate(-3deg);
   user-select: none;
@@ -144,6 +142,17 @@ body{
     max-width: 320px;
   }
 }
+@media screen and (max-width: 675px) {
+  .button-53 {
+    padding: .50rem 1.40rem;
+    max-width: 250px;
+  }
+  .hero_btn-continer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 /*DESCRIPTION 1 BOX*/
 .banner1 .row{
@@ -174,20 +183,23 @@ body{
   justify-content: center;
   align-items: center;
 }
-
 .banner1_img img{
   width: 70%;
   height: auto;
 }
 @media screen and (max-width: 991px) {
   .banner1 .banner1_txt h2{
+    margin-top: 15px;
     font-size: 25px;
   }
 }
 @media screen and (max-width: 767px) {
+  .banner1 .container{
+    margin: 60px auto;
+  }
   .banner1 .banner1_txt h2{
-    padding: 0 20px;
-    font-size: 25px;
+    padding: 0 30px;
+    font-size: 20px;
     text-align: center;
     line-height: normal;
     display: inline-block;
@@ -197,29 +209,23 @@ body{
     color: #001F3D;
     max-width: inherit;
     border: inherit;
-    font-weight: 500;
+    /* font-weight: 500; */
   }
   .banner1_img{
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .teacher_box img {
-    margin: auto;
-    width: 60%;
-    height: auto;
-  }
-  
 }
 
 /* DESC 2 BOX */
 .boxed_container h2{
-  padding: 25px 0;;
+  padding: 25px 0;
   line-height: normal;
   display: inline-block;
   font-family: montsbold;
   text-transform: none;
-  font-size: 25px;
+  font-size: 30px;
   color: black;
 }
 .box{
@@ -227,6 +233,11 @@ body{
   margin: 0 !important;
   width: 100%;
   height: auto;
+}
+.box-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box-img img{
   margin:0 !important;
@@ -237,13 +248,32 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px;
   background-color: #ffe0ae;
 }
 
+@media screen and (max-width: 1243px) {
+  .boxed_container h2{
+    padding: 30px 0;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1072px) {
+  .boxed_container h2{
+    padding: 30px 0;
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 991px) {
-  .banner1 .banner1_txt h2{
+  .boxed_container h2{
+    padding: 30px 0;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 841px) {
+  .boxed_container h2{
+    padding: 30px ;
     font-size: 20px;
   }
 }
