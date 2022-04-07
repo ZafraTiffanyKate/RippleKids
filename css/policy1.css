@@ -9,6 +9,7 @@
     src: url('fonts/Montserrat-Bold.ttf');
     font-family: montsbold;
 }
+
 /*Title, rarejob*/
 .policy_section {
     background-color: white;
@@ -28,8 +29,8 @@
 }
 
 .jumbotron {
-     background-image: url(../imgs/c1.gif);
-}
+     background-image: url(../imgs/c1.gif); 
+} 
 
 .display-4 {
     font-size:40px;
@@ -62,7 +63,7 @@
 
 /*1-7 policies*/
 .cont_title {
-    color: brown;
+    color: #001F3D;
     font-size: 30px;
     font-family: montsbold;
 }
@@ -70,7 +71,7 @@
 
 .cont_des {
     text-indent: 30px;
-    color: #001F3D;
+    color: black;
     font-size: 20px;
     padding-top: 2px;
     font-family: poppins;
@@ -83,4 +84,70 @@
     font: 15px;
     color: black;
 
+}
+
+@media screen and (max-width : 630px) {
+    .policy_title {
+        font-family: montsbold;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 2px;
+        color: #C3D600;
+        border-left: 10px solid #f7b52c;
+        background-color: white;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    .display-4 {
+        font-size:20px;
+        color: #F28500;
+        font-weight: bolder;
+        text-align: left;
+    }
+
+    .intro {
+        text-indent: 50px;
+        font-size: 15px;
+        color: black;
+        font-family: poppins;
+    }
+    
+    .jcontainer{
+        overflow-y: scroll;
+        height: 600px;
+        background-color: #faebd7;
+        opacity: 0.9;
+        background-size:100% 100%;
+        padding-top: 4%;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 3%;
+        margin: 10px 20px 20px 30px;
+    }
+    
+    .cont_title {
+        color: #001F3D;
+        font-size: 15px;
+        font-family: montsbold;
+    }
+    
+    .cont_des {
+        text-indent: 20px;
+        color: black;
+        font-size: 15px;
+        padding-top: 2px;
+        font-family: poppins;
+    }
+    
+    .end_p {
+        text-align: right;
+        font-family: poppins;
+        font: 10px;
+        color: black;
+    
+    }
 }
