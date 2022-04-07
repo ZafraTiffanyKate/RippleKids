@@ -1,77 +1,68 @@
 @font-face{
-    src: url('../fonts/Poppins-SemiBold.ttf');
-    font-family: poppins;
+  src: url('../fonts/Poppins-SemiBold.ttf');
+  font-family: poppins;
 }
 
 @font-face{
-    src: url('../fonts/Montserrat-Bold.ttf');
-    font-family: montsbold;
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-family: montsbold;
+}
+
+body {
+  background-image: url(../imgs/bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 /*About  Us*/
 .a_title {
-  color: #F28500;
+  color: #001F3D;
   text-align: center;
   font-family: montsbold;
-  font-size: 80px
+  font-size: 55px
 }
 
 /*mission title*/
 .miss {
   text-align: left;
   font-family: montsbold;
-  color: #001F3D;
-  font-size: 75px;
+  color: #F28500;
+  font-size: 50px;
   text-shadow: 1px 1px 3px #673c1b;
 }
 
-/*container with the mission*/
-.mission_section{
-  background-image: url(../imgs/a1.jpg);
-  height: 100%;
-  background-position: cover;
-  background-repeat: no-repeat;
-  position: relative;
 
-}
 
 /*content in the mission*/
 .p_content_m {
-    font-size: 50px;
-    color: white;
-    font-weight: bold;
-    margin-left: -10px;
-    text-shadow: 1px 1px 2px black;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  padding-left: 5px;
+  text-shadow: 1px 1px 2px black;
 }
 
 
 /*vision title*/
 .vis {
   font-family: montsbold;
-  color: #002F3D;
-  font-size: 75px;
+  color: #F28500;
+  /* color: #002F3D; */
+  font-size: 50px;
   text-align: right;
   text-shadow: 1px 1px 3px #673c1b;
 }
 
-/*container with the vision*/
-.vision_section{
-  background-image: url(../imgs/a2.jpg);
-  height: 200%;
-  background-position: cover;
-  background-repeat: no-repeat;
-  position: relative;
-
-}
 
 /*content in the vision*/
 .p_content {
+  color: black;
   text-align: right;
-	font-size: 35px;
-    /*color: #2F4F4F;*/
-    font-weight: bold;
-    padding-left: 60px;
-    text-shadow: 1px 1px 2px black;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 30px;
+  text-shadow: 1px 1px 2px black;
 
 }
 
@@ -85,6 +76,62 @@
   color: white;
 }
 
+@media screen and (max-width: 770px) {
+  .a_title {
+    color: #001F3D;
+    text-align: center;
+    font-family: montsbold;
+    font-size: 45px
+    }
 
+  .miss {
+    text-align: left;
+    font-family: montsbold;
+    color: #F28500;
+    font-size: 40px;
+    text-shadow: 1px 1px 3px #673c1b;
+    }
+  
+  .about_section{
+    height: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    }
 
+  .p_content_m {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    padding-left: 2px;
+    text-shadow: 1px 1px 2px black;
+    }
+    
+  .vis {
+    font-family: montsbold;
+    color: #F28500;
+    font-size: 40px;
+    text-align: right;
+    text-shadow: 1px 1px 3px #673c1b;
+   }
+    
+    
+  .p_content {
+    text-align: right;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 60px;
+    text-shadow: 1px 1px 2px black;
+    
+    }
+    
+  .mv_detail-box{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left;
+    position: block;
+    color: white;
+    }
+}
 
