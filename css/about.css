@@ -8,15 +8,17 @@
   font-family: montsbold;
 }
 
-body {
-  background-image: url(../imgs/bg1.png);
+ body {
+  background-image: url(../imgs/bg1.png); 
+  
   background-size: cover;
   background-repeat: no-repeat;
   
-}
+} 
 
 /*About  Us*/
 .a_title {
+  background-image: url(../imgs/bg3.png); 
   color: #001F3D;
   text-align: center;
   font-family: montsbold;
@@ -92,12 +94,12 @@ body {
     text-shadow: 1px 1px 3px #673c1b;
     }
   
-  .about_section{
-    height: 100%;
+  /* .about_section{
+    background-image: url(../imgs/bg6.png);
     background-position: cover;
     background-repeat: no-repeat;
     position: relative;
-    }
+    } */
 
   .p_content_m {
     font-size: 30px;
@@ -134,4 +136,3 @@ body {
     color: white;
     }
 }
-
