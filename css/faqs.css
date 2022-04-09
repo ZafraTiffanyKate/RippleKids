@@ -1,7 +1,7 @@
 /* FAQs section CSS */
 
 .faq-section {
-  background-image: url(../imgs/cherrybloom.jpg);
+  background-image: url(../imgs/bg6.png);
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,8 +12,8 @@
 .faq-title h2 {
   src: url('../fonts/Montserrat-Bold.ttf');
   font-family: montsbold;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.575);
+  color: #f28500;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.575); */
   position: relative;
   margin-bottom: 45px;
   display: inline-block;
@@ -60,7 +60,7 @@
 }
   
 .faq .card .card-header:hover {
-  background: #f285002c ;
+  background: #c4d60059;
   padding-left: 20px;
 }
 
@@ -93,7 +93,7 @@
   -moz-border-radius: 100px;
   border-radius: 100px;
   text-align: center;
-  background: #c3d600  ;
+  background: #f28500  ;
   color: #fff;
   font-size: 15px;
   margin-right: 25px;
