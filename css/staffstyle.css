@@ -143,17 +143,17 @@ img {
 .section-title::after {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 5px;
+    width: 4.5%;
+    height: 3px;
     left: calc(50% - 25px);
-    background: #353535;
+    background: #c3d600;
 }
 
 .section-title h1 {
-    color: #353535;
-    font-size: 50px;
-    letter-spacing: 5px;
-    margin-bottom: 5px;
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-family: montsbold;
+  color: #f28500;
+  font-size: 35px;
 }
 
 @media(max-width: 767.98px) {
@@ -180,8 +180,8 @@ img {
 /********* Team #1 CSS **********/
 /**********************************/
 .team-1 {
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     background: linear-gradient(navajowhite, #f28500);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
@@ -308,7 +308,7 @@ img {
 /********* Team #2 CSS **********/
 /**********************************/
 .team-2 {
-    margin-bottom: 250px;
+    margin-bottom: 50px;
 }
 
 .team-2 .team-img {
