@@ -465,11 +465,18 @@ body::before{
 .first .main-card{
   display: flex;
   justify-content: space-evenly;
-  width: 200%;
+  width: 400%;
   transition: 1s;
 }
 #two:checked ~ .main-card{
   margin-left: -100%;
+}
+
+#three:checked ~ .main-card{
+  margin-left: -200%;
+}
+#four:checked ~ .main-card{
+  margin-left: -300%;
 }
 .first .main-card .cards{
   width: calc(100% / 2 - 10px);
@@ -557,6 +564,19 @@ body::before{
 #two:checked ~ .button .two{
   width: 35px;
 }
+#three:checked ~ .button .one{
+  width: 15px;
+}
+#three:checked ~ .button .three{
+  width: 35px;
+}
+#four:checked ~ .button .one{
+  width: 15px;
+}
+#four:checked ~ .button .four{
+  width: 35px;
+}
+
 input[type="radio"]{
   display: none;
 }
