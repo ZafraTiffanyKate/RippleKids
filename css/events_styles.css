@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  margin: 0;
+}
+
+/*----- Image Slide -----*/
+
+
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container .bg{
+  position:absolute;
+  width: 100%; 
+  max-height: 100vh;
+  margin: auto;
+  object-fit: contain;
+}
+
+.Containers {
+  display: none;
+  
+}
+
+.Containers img{
+  padding-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  min-height: 50%;
+  position:relative;
+  z-index:5;
+}
+
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  padding: 17px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: all ease 0.4s;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.Back:hover, .forward:hover {
+  background-color: orange;
+}
+
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #C3D600;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s ease;
+  margin-bottom: 60px;
+}
+
+.enable, .dots:hover {
+  background-color: orange;
+}
+
+
+
+/* --------Latest Events-------- */
+
+.rectangle{
+  background: #F28500;
+  margin: auto;
+  width: 100%;
+  line-height: 70px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  box-sizing:border-box;
+  color: white;
+}
+
+
+/*---------Article Cards---------*/
+
+.card-img-top {
+  width:  100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card .card-body{
+  min-height: 200px;
+}
+
+#bannerimage {
+  margin-top: 50px;
+  display: block;
+  text-align: justify;
+  background-position: center;
+  
+}
+.banner{
+  width: 100%;
+  height: auto;
+}
+
+.banner img{
+  display: inline-block;
+  max-height: 10%;
+}
+
+
+/*---------BLOG CARDS----------*/
+.card-deck{
+  margin: 50px 100px 0px 100px
+}
+.card-body p{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #656565;
+}
+.card-body a{
+  color: rgb(26, 26, 26);
+}
+.card-body a:hover{
+  color: #F28500;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {  
+  .xs {color:red;font-weight:bold;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:768px) {  
+  .sm {color:red;font-weight:bold;}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width:992px) {  
+ .md {color:red;font-weight:bold;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1200px) { 
+ .lg {color:red;font-weight:bold;}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .xl {color:red;font-weight:bold;}
+}
+ 
