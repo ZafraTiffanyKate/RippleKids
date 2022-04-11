@@ -51,8 +51,7 @@ body {
     background-position: cover;
     overflow-y: scroll;
     height: 600px;
-    background-color: none;
-/*     background-color: #faebd7; */
+    background-color: #faebd7; 
 /*     background-color: #FFE0AE;  */
     opacity: 0.9;
     background-size:100% 100%;
