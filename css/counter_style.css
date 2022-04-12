@@ -1,0 +1,57 @@
+.banner2_1 {
+  background-image: url('../imgs/bg5.1.png');
+  background-position: bottom;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#counter{
+  padding-top: 50px;
+}
+
+#counter-box-container {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.numbers-box {
+  width: 250px;
+  min-width: 150px;
+  margin: 50px 10px 50px 10px;
+  padding: 5px 5px 5px 5px;
+  float: left;
+  text-align: center;
+  color: white;
+  display: inline-block;
+/*  border: 1px solid black;
+*/
+}
+
+.counter-value {
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-family: montsbold;
+  font-size: 30px;
+  color: white;
+}
+
+#counter-title {
+  src: url('../fonts/Avenir Light.ttf');
+  font-family: avenirl;
+  /*src: url('../fonts/Poppins-SemiBold.ttf');
+  font-family: poppins;*/
+
+  color: white;
+  font-size: 20px;
+}
+
+#counter-icon{
+  color: white;
+  font-size: 70px;
+}
+
+.title-line{
+    border-top: px solid #c3d600;
+    width: 4.5%
+}
