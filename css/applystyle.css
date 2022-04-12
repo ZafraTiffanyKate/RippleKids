@@ -7,7 +7,7 @@ body{
     background-image: url(../imgs/bg3.png);
     background-position: cover;
     background-repeat: no-repeat;
-    
+    background-attachment: fixed;
 }
 
 @font-face{
