@@ -428,16 +428,15 @@ button.apply-now:active::before {
   overflow: hidden;
   display: inline-block;
 }
+
 .numbers-box {
   width: 250px;
-  min-width: 150px;
+  min-width: 200px
   margin: 50px 10px 50px 10px;
   padding: 5px 5px 5px 5px;
   float: left;
   text-align: center;
   color: white;
-/*  border: 1px solid black;
-*/
 }
 
 .counter-value {
@@ -475,4 +474,44 @@ button.apply-now:active::before {
   margin: auto;
   justify-content: center;
   opacity:1;
+}
+
+/*Media queries for COUNTER*/
+
+@media screen and (max-width: 1100px) and (min-width: 800px){
+  .numbers-box{ 
+    width: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  .counter-value{
+    font-size: 25px;
+
+  }
+  #counter-icon{
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width: 799px){
+
+  .numbers-box{ 
+    width: 50%;
+  }
+
+  .counter-value{
+    font-size: 25px;
+  }
+
+  #counter-title{
+    font-size:18px;
+  }
+
+  #counter-icon{
+    font-size: 60px;
+  }
+
 }
