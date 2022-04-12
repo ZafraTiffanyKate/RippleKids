@@ -157,9 +157,12 @@ h1 {
     
     .end_p {
         text-align: right;
-        font-family: poppins;
-        font: 10px;
         color: black;
+        font-weight: bold;
+    }
     
+    em {
+        font-size: 15px;
+        font-family: poppins;
     }
 }
